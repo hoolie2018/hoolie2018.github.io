@@ -178,6 +178,13 @@
         </url>
     
     
+        <url>
+            <loc>/why-books-should-be-your-priority/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2018-11-22</lastmod>
+        </url>
+    
     
         <url>
             <loc>/authors/mranderson/</loc>
