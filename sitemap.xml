@@ -1,34 +1,188 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for page in site.pages %}
+    
         <url>
-            <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            {% if page.layout == 'main' %}
-                <changefreq>weekly</changefreq>
-                <priority>1</priority>
-                <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
-            {% else %}
+            <loc>/404.html</loc>
+            
                 <changefreq>monthly</changefreq>
                 <priority>0.5</priority>
-            {% endif %}
+            
         </url>
-    {% endfor %}
-    {% for post in site.posts %}
+    
         <url>
-            <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
-            <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
-            <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+            <loc>/about/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
         </url>
-    {% endfor %}
-    {% for author in site.authors %}
+    
         <url>
-            <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
+            <loc>/category/blog/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/code/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/contact/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/css/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/diet/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/feed.xml</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/life/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/contact/message-sent/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/music/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/assets/css/preview.css</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/search.json</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/sitemap.xml</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/staff/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/assets/css/styles.css</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/tags/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/tips/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/travel/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/tutorial/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+        <url>
+            <loc>/category/work/</loc>
+            
+                <changefreq>monthly</changefreq>
+                <priority>0.5</priority>
+            
+        </url>
+    
+    
+    
+        <url>
+            <loc>/authors/mranderson/</loc>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
         </url>
-    {% endfor %}
+    
 </urlset>
