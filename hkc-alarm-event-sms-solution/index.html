@@ -182,7 +182,7 @@ March 16, 2024
                 <!-- Add your table of contents here -->
 
 
-                <h3 id="main-script">Main script</h3>
+                <h3 id="main-script---hkcsh">Main script - HKC.sh</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="c">#!/bin/ash</span>
@@ -256,7 +256,7 @@ log_message <span class="s2">"Starting up!"</span>
 
 </code></pre></div></div>
 
-<h3 id="config-file">Config File</h3>
+<h3 id="config-file---hkc_configtxt">Config File - HKC_config.txt</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="nv">api_username</span><span class="o">=</span><span class="s2">"xxxxxxxxxxx"</span>
@@ -271,6 +271,19 @@ log_message <span class="s2">"Starting up!"</span>
 <span class="nv">sleep_duration</span><span class="o">=</span>3
 
 </code></pre></div></div>
+
+<h3 id="keep-alive-script---check_hkcsh">Keep Alive Script - check_hkc.sh</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">if</span> <span class="o">!</span> pgrep <span class="nt">-f</span> <span class="s2">"ash /etc/HKC.sh"</span> <span class="o">&gt;</span> /dev/null
+<span class="k">then
+    </span>logger <span class="s2">"HKC Check Script : Script Not Running!"</span>
+    <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> : HKC Check Script : Script Not Running!"</span> <span class="o">&gt;&gt;</span> /tmp/HKC.log
+    /etc/HKC.sh &amp;
+<span class="k">fi</span>
+
+</code></pre></div></div>
+
 
 
                 <!-- Pagination links -->
@@ -463,7 +476,7 @@ log_message <span class="s2">"Starting up!"</span>
             "description": "Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS",
             "image": "",
             "url": "/hkc-alarm-event-sms-solution/",
-            "articleBody": "Main script
+            "articleBody": "Main script - HKC.sh
 
 
 #!/bin/ash
@@ -537,7 +550,7 @@ done
 
 
 
-Config File
+Config File - HKC_config.txt
 
 
 api_username=&quot;xxxxxxxxxxx&quot;
@@ -552,8 +565,21 @@ log_path=&quot;/tmp/HKC.log&quot;
 sleep_duration=3
 
 
+
+Keep Alive Script - check_hkc.sh
+
+
+if ! pgrep -f &quot;ash /etc/HKC.sh&quot; &amp;gt; /dev/null
+then
+    logger &quot;HKC Check Script : Script Not Running!&quot;
+    echo &quot;$(date) : HKC Check Script : Script Not Running!&quot; &amp;gt;&amp;gt; /tmp/HKC.log
+    /etc/HKC.sh &amp;amp;
+fi
+
+
+
 ",
-            "wordcount": "435",
+            "wordcount": "498",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
