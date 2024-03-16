@@ -179,6 +179,13 @@
     
     
         <url>
+            <loc>/hkc-alarm-event-sms-solution/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2024-03-16</lastmod>
+        </url>
+    
+        <url>
             <loc>/why-books-should-be-your-priority/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
