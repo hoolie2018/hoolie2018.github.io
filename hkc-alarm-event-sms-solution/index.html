@@ -18,7 +18,7 @@
     
 
     <title>Send HKC Alarm Events via SMS | Itfixers.ie</title>
-    <meta name="description" content="Use an OpenWRT powered router to receive events from a HKC alarm and send via SMS">
+    <meta name="description" content="Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS">
     
         <meta name="keywords" content="">
     
@@ -26,7 +26,7 @@
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Send HKC Alarm Events via SMS | Itfixers.ie">
-    <meta name="twitter:description" content="Use an OpenWRT powered router to receive events from a HKC alarm and send via SMS">
+    <meta name="twitter:description" content="Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS">
 
     
         <meta property="twitter:image" content="/assets/img/blog-image.png">
@@ -38,7 +38,7 @@
     <meta property="og:url" content="/hkc-alarm-event-sms-solution/">
     <meta property="og:title" content="Send HKC Alarm Events via SMS | Itfixers.ie">
     <meta property="og:image" content="/assets/img/blog-image.png">
-    <meta property="og:description" content="Use an OpenWRT powered router to receive events from a HKC alarm and send via SMS">
+    <meta property="og:description" content="Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS">
     <meta property="og:site_name" content="Itfixers.ie | We fix your IT issues!">
 
     <!-- Favicon -->
@@ -182,7 +182,7 @@ March 16, 2024
                 <!-- Add your table of contents here -->
 
 
-                <h2 id="main-script">Main script</h2>
+                <h3 id="main-script">Main script</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="c">#!/bin/ash</span>
@@ -256,6 +256,20 @@ log_message <span class="s2">"Starting up!"</span>
 
 </code></pre></div></div>
 
+<h3 id="config-file">Config File</h3>
+
+<p>api_username=”xxxxxxxxxxx”
+api_password=”xxxxxxxxxxx”
+api_url=”https://api.46elks.com/a1/sms”
+sender=”xxxxx”
+sms_dest_1=”+353xxxxxxxxx”
+sms_dest_2=”+353xxxxxxxxx”
+arm_alarm=”Full set  U1  User 1”
+disarm_alarm=”Unset  U1  User 1”
+log_path=”/tmp/HKC.log”
+sleep_duration=3</p>
+
+
 
                 <!-- Pagination links -->
 
@@ -319,7 +333,7 @@ log_message <span class="s2">"Starting up!"</span>
 
         <section class="share">
     <h3>Share</h3>
-    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;Use an OpenWRT powered router to receive events from a HKC alarm and send via SMS&quot;%20/hkc-alarm-event-sms-solution/%20via%20&#64;&hashtags="
+    <a aria-label="Share on Twitter" href="https://twitter.com/intent/tweet?text=&quot;Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS&quot;%20/hkc-alarm-event-sms-solution/%20via%20&#64;&hashtags="
     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" title="Share on Twitter">
         <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
     </a>
@@ -444,7 +458,7 @@ log_message <span class="s2">"Starting up!"</span>
             "@type": "BlogPosting",
             "name": "Send HKC Alarm Events via SMS",
             "headline": "",
-            "description": "Use an OpenWRT powered router to receive events from a HKC alarm and send via SMS",
+            "description": "Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS",
             "image": "",
             "url": "/hkc-alarm-event-sms-solution/",
             "articleBody": "Main script
@@ -520,8 +534,22 @@ do
 done
 
 
+
+Config File
+
+api_username=”xxxxxxxxxxx”
+api_password=”xxxxxxxxxxx”
+api_url=”https://api.46elks.com/a1/sms”
+sender=”xxxxx”
+sms_dest_1=”+353xxxxxxxxx”
+sms_dest_2=”+353xxxxxxxxx”
+arm_alarm=”Full set  U1  User 1”
+disarm_alarm=”Unset  U1  User 1”
+log_path=”/tmp/HKC.log”
+sleep_duration=3
+
 ",
-            "wordcount": "380",
+            "wordcount": "400",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
