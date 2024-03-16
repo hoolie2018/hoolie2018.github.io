@@ -283,7 +283,12 @@ log_message <span class="s2">"Starting up!"</span>
 <span class="k">fi</span>
 
 </code></pre></div></div>
+<h3 id="cron-job">Cron job</h3>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /etc/check_hkc.sh
+
+</code></pre></div></div>
 
 
                 <!-- Pagination links -->
@@ -577,9 +582,14 @@ then
 fi
 
 
+Cron job
+
+
+* * * * * /etc/check_hkc.sh
+
 
 ",
-            "wordcount": "498",
+            "wordcount": "518",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
