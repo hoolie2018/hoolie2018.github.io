@@ -257,8 +257,7 @@ log_message <span class="s2">"Starting up!"</span>
 <span class="k">done</span>
 </code></pre></div></div>
 <h3 id="config-file---hkc_configtxt">Config File - HKC_config.txt</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="nv">api_username</span><span class="o">=</span><span class="s2">"xxxxxxxxxxx"</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">api_username</span><span class="o">=</span><span class="s2">"xxxxxxxxxxx"</span>
 <span class="nv">api_password</span><span class="o">=</span><span class="s2">"xxxxxxxxxxx"</span>
 <span class="nv">api_url</span><span class="o">=</span><span class="s2">"https://api.46elks.com/a1/sms"</span>
 <span class="nv">sender</span><span class="o">=</span><span class="s2">"xxxxx"</span>
@@ -270,9 +269,7 @@ log_message <span class="s2">"Starting up!"</span>
 <span class="nv">sleep_duration</span><span class="o">=</span>3
 </code></pre></div></div>
 <h3 id="keep-alive-script---check_hkcsh">Keep Alive Script - check_hkc.sh</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="k">if</span> <span class="o">!</span> pgrep <span class="nt">-f</span> <span class="s2">"ash /etc/HKC.sh"</span> <span class="o">&gt;</span> /dev/null
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span> <span class="o">!</span> pgrep <span class="nt">-f</span> <span class="s2">"ash /etc/HKC.sh"</span> <span class="o">&gt;</span> /dev/null
 <span class="k">then
     </span>logger <span class="s2">"HKC Check Script : Script Not Running!"</span>
     <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> : HKC Check Script : Script Not Running!"</span> <span class="o">&gt;&gt;</span> /tmp/HKC.log
@@ -280,8 +277,7 @@ log_message <span class="s2">"Starting up!"</span>
 <span class="k">fi</span>
 </code></pre></div></div>
 <h3 id="cron-job">Cron job</h3>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /etc/check_hkc.sh
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /etc/check_hkc.sh
 </code></pre></div></div>
 
 
@@ -519,7 +515,6 @@ do
 done
 
 Config File - HKC_config.txt
-
 api_username=&quot;xxxxxxxxxxx&quot;
 api_password=&quot;xxxxxxxxxxx&quot;
 api_url=&quot;https://api.46elks.com/a1/sms&quot;
@@ -532,8 +527,6 @@ log_path=&quot;/tmp/HKC.log&quot;
 sleep_duration=3
 
 Keep Alive Script - check_hkc.sh
-
-
 if ! pgrep -f &quot;ash /etc/HKC.sh&quot; &amp;gt; /dev/null
 then
     logger &quot;HKC Check Script : Script Not Running!&quot;
@@ -542,11 +535,10 @@ then
 fi
 
 Cron job
-
 * * * * * /etc/check_hkc.sh
 
 ",
-            "wordcount": "577",
+            "wordcount": "574",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
