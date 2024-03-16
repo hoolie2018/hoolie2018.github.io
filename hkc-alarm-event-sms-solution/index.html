@@ -168,7 +168,7 @@ March 16, 2024
                         </time>
                     
                     <svg id="clock" class="icon-clock"><use xlink:href="#icon-clock"></use></svg>
-                    <span>2 min to read</span>
+                    <span>3 min to read</span>
                 </p>
                 <h1 class="post-title">OpenWRT Receive HKC Alarm Events and Forward via SMS</h1>
                 <p class="post-subtitle"></p>
@@ -184,7 +184,9 @@ March 16, 2024
                 <!-- Add your table of contents here -->
 
 
-                <h3 id="main-script---hkcsh">Main script - HKC.sh</h3>
+                <p>This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify main script is running and executes it if not.</p>
+
+<h3 id="main-script---hkcsh">Main script - HKC.sh</h3>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/ash</span>
 
 <span class="c"># Setup port to read from HKC alarm printer output</span>
@@ -303,7 +305,7 @@ log_message <span class="s2">"Starting up!"</span>
 
         <!-- Add time bar only for pages without pagination -->
         
-            <div class="time-bar" data-minutes="2">
+            <div class="time-bar" data-minutes="3">
     <span class="time-completed"></span>
     <span class="time-remaining"></span>
     <div class="bar">
@@ -444,7 +446,9 @@ log_message <span class="s2">"Starting up!"</span>
             "description": "Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS",
             "image": "https://www.itfixers.ie/assets/img/openwrt_logo.jpg",
             "url": "/hkc-alarm-event-sms-solution/",
-            "articleBody": "Main script - HKC.sh
+            "articleBody": "This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify main script is running and executes it if not.
+
+Main script - HKC.sh
 #!/bin/ash
 
 # Setup port to read from HKC alarm printer output
@@ -542,7 +546,7 @@ Cron job
 * * * * * /etc/check_hkc.sh
 
 ",
-            "wordcount": "517",
+            "wordcount": "577",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
