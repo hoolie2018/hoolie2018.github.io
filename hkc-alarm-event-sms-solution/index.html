@@ -184,7 +184,7 @@ March 16, 2024
                 <!-- Add your table of contents here -->
 
 
-                <p>This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify main script is running and executes it if not.</p>
+                <p>This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify the main script is running and executes it if not.</p>
 
 <h3 id="main-script---hkcsh">Main script - HKC.sh</h3>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/ash</span>
@@ -442,7 +442,7 @@ log_message <span class="s2">"Starting up!"</span>
             "description": "Use an OpenWRT powered router to receive events from a HKC alarm and forward via SMS",
             "image": "https://www.itfixers.ie/assets/img/openwrt_logo.jpg",
             "url": "/hkc-alarm-event-sms-solution/",
-            "articleBody": "This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify main script is running and executes it if not.
+            "articleBody": "This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify the main script is running and executes it if not.
 
 Main script - HKC.sh
 #!/bin/ash
@@ -538,7 +538,7 @@ Cron job
 * * * * * /etc/check_hkc.sh
 
 ",
-            "wordcount": "574",
+            "wordcount": "575",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
