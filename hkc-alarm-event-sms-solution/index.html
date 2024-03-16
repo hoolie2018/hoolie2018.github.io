@@ -183,9 +183,7 @@ March 16, 2024
 
 
                 <h3 id="main-script---hkcsh">Main script - HKC.sh</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="c">#!/bin/ash</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/ash</span>
 
 <span class="c"># Setup port to read from HKC alarm printer output</span>
 
@@ -253,11 +251,8 @@ log_message <span class="s2">"Starting up!"</span>
     </span><span class="nb">sleep</span> <span class="s2">"</span><span class="k">${</span><span class="nv">sleep_duration</span><span class="k">}</span><span class="s2">"</span>
 
 <span class="k">done</span>
-
 </code></pre></div></div>
-
 <h3 id="config-file---hkc_configtxt">Config File - HKC_config.txt</h3>
-
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="nv">api_username</span><span class="o">=</span><span class="s2">"xxxxxxxxxxx"</span>
 <span class="nv">api_password</span><span class="o">=</span><span class="s2">"xxxxxxxxxxx"</span>
@@ -269,9 +264,7 @@ log_message <span class="s2">"Starting up!"</span>
 <span class="nv">disarm_alarm</span><span class="o">=</span><span class="s2">"Unset  U1  User 1"</span>
 <span class="nv">log_path</span><span class="o">=</span><span class="s2">"/tmp/HKC.log"</span>
 <span class="nv">sleep_duration</span><span class="o">=</span>3
-
 </code></pre></div></div>
-
 <h3 id="keep-alive-script---check_hkcsh">Keep Alive Script - check_hkc.sh</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
@@ -281,13 +274,10 @@ log_message <span class="s2">"Starting up!"</span>
     <span class="nb">echo</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">date</span><span class="si">)</span><span class="s2"> : HKC Check Script : Script Not Running!"</span> <span class="o">&gt;&gt;</span> /tmp/HKC.log
     /etc/HKC.sh &amp;
 <span class="k">fi</span>
-
 </code></pre></div></div>
 <h3 id="cron-job">Cron job</h3>
-
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> <span class="k">*</span> /etc/check_hkc.sh
-
 </code></pre></div></div>
 
 
@@ -482,8 +472,6 @@ log_message <span class="s2">"Starting up!"</span>
             "image": "",
             "url": "/hkc-alarm-event-sms-solution/",
             "articleBody": "Main script - HKC.sh
-
-
 #!/bin/ash
 
 # Setup port to read from HKC alarm printer output
@@ -553,10 +541,7 @@ do
 
 done
 
-
-
 Config File - HKC_config.txt
-
 
 api_username=&quot;xxxxxxxxxxx&quot;
 api_password=&quot;xxxxxxxxxxx&quot;
@@ -569,8 +554,6 @@ disarm_alarm=&quot;Unset  U1  User 1&quot;
 log_path=&quot;/tmp/HKC.log&quot;
 sleep_duration=3
 
-
-
 Keep Alive Script - check_hkc.sh
 
 
@@ -581,15 +564,12 @@ then
     /etc/HKC.sh &amp;amp;
 fi
 
-
 Cron job
-
 
 * * * * * /etc/check_hkc.sh
 
-
 ",
-            "wordcount": "518",
+            "wordcount": "517",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
