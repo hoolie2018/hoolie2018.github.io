@@ -5,13 +5,13 @@
     <description>A collection of articles written by an IT expert</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Mar 2024 23:25:11 +0000</pubDate>
-    <lastBuildDate>Sat, 16 Mar 2024 23:25:11 +0000</lastBuildDate>
+    <pubDate>Sat, 16 Mar 2024 23:32:57 +0000</pubDate>
+    <lastBuildDate>Sat, 16 Mar 2024 23:32:57 +0000</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
       <item>
-        <title>OpenWRT Receive HKC Alarm Events and Forward via SMS</title>
-        <description>&lt;p&gt;This solution consists of an OpenWRT-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify the main script is running and executes it if not.&lt;/p&gt; &lt;h3 id=&quot;main-script---hkcsh&quot;&gt;Main script - HKC.sh&lt;/h3&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/ash&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Setup port to read from HKC alarm printer output&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;stty&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; /dev/ttyUSB0 raw 2400 &lt;span class=&quot;c&quot;&gt;# Constants&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;CONFIG_FILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/etc/HKC_config.txt&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Functions&lt;/span&gt;...</description>
+        <title>OpenWrt Receive HKC Alarm Events and Forward via SMS</title>
+        <description>&lt;p&gt;This solution consists of an OpenWrt-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify the main script is running and executes it if not.&lt;/p&gt; &lt;h3 id=&quot;main-script---hkcsh&quot;&gt;Main script - HKC.sh&lt;/h3&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/ash&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Setup port to read from HKC alarm printer output&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;stty&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; /dev/ttyUSB0 raw 2400 &lt;span class=&quot;c&quot;&gt;# Constants&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;CONFIG_FILE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/etc/HKC_config.txt&quot;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Functions&lt;/span&gt;...</description>
         <pubDate>Sat, 16 Mar 2024 21:55:52 +0000</pubDate>
         <link>/hkc-alarm-event-sms-solution/</link>
         <guid isPermaLink="true">/hkc-alarm-event-sms-solution/</guid>
