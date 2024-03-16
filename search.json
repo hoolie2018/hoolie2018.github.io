@@ -3,7 +3,7 @@
   
   
     {
-      "title"    : "Send HKC Alarm Events via SMS",
+      "title"    : "OpenWRT Receive HKC Alarm Events and Forward Via SMS",
       "tags"     : "",
       "categories" : "",
       "url"      : "/hkc-alarm-event-sms-solution/",
