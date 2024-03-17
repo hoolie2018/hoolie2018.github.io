@@ -3,7 +3,7 @@
   
   
     {
-      "title"    : "OpenWrt Receive HKC Alarm Events and Forward via SMS",
+      "title"    : "Use an OpenWrt powered router to receive events from a HKC alarm and forward via SMS",
       "tags"     : "",
       "categories" : "",
       "url"      : "/hkc-alarm-event-sms-solution/",
