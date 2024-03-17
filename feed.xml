@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Itfixers.ie | Blog of an IT Expert</title>
-    <description>A collection of articles written by an IT expert</description>
+    <title>Itfixers.ie | Blog of an IT Specialist</title>
+    <description>A collection of articles written by an IT Specialist</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Mar 2024 01:16:51 +0000</pubDate>
-    <lastBuildDate>Sun, 17 Mar 2024 01:16:51 +0000</lastBuildDate>
+    <pubDate>Sun, 17 Mar 2024 21:32:40 +0000</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2024 21:32:40 +0000</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
       <item>
