@@ -5,12 +5,12 @@
     <description>A collection of articles written by an IT expert</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Mar 2024 01:12:26 +0000</pubDate>
-    <lastBuildDate>Sun, 17 Mar 2024 01:12:26 +0000</lastBuildDate>
+    <pubDate>Sun, 17 Mar 2024 01:13:38 +0000</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2024 01:13:38 +0000</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
       <item>
-        <title>Use an OpenWrt powered router to receive events from a HKC alarm and forward via SMS</title>
+        <title>HKC Alarm Monitoring Solution</title>
         <description>&lt;p&gt;The solution described involves using an OpenWrt-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script on the router parses messages from the alarm system, and if they meet certain criteria (deemed “interesting”), it forwards the message via SMS to a designated contact.&lt;/p&gt; &lt;p&gt;To ensure continuous operation, a cron job is set up to execute a keep-alive script, which verifies if the main script is running and starts it if it’s not. Additionally, the SMS gateway service provided by 46elks.com is utilized to send the SMS messages.&lt;/p&gt; &lt;p&gt;This solution integrates various...</description>
         <pubDate>Sat, 16 Mar 2024 21:55:52 +0000</pubDate>
         <link>/hkc-alarm-event-sms-solution/</link>

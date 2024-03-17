@@ -3,7 +3,7 @@
   
   
     {
-      "title"    : "Use an OpenWrt powered router to receive events from a HKC alarm and forward via SMS",
+      "title"    : "HKC Alarm Monitoring Solution",
       "tags"     : "OpenWrt, HKC, Alarm, 46elks.com, Printer, SMS, Router, and Serial",
       "categories" : "",
       "url"      : "/hkc-alarm-event-sms-solution/",
