@@ -5,8 +5,8 @@
     <description>A collection of articles written by an IT expert</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 17 Mar 2024 00:36:03 +0000</pubDate>
-    <lastBuildDate>Sun, 17 Mar 2024 00:36:03 +0000</lastBuildDate>
+    <pubDate>Sun, 17 Mar 2024 00:43:07 +0000</pubDate>
+    <lastBuildDate>Sun, 17 Mar 2024 00:43:07 +0000</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
       <item>
@@ -15,6 +15,20 @@
         <pubDate>Sat, 16 Mar 2024 21:55:52 +0000</pubDate>
         <link>/hkc-alarm-event-sms-solution/</link>
         <guid isPermaLink="true">/hkc-alarm-event-sms-solution/</guid>
+        
+        <category>OpenWrt</category>
+        
+        <category>HKC</category>
+        
+        <category>46elks.com</category>
+        
+        <category>Printer</category>
+        
+        <category>SMS</category>
+        
+        <category>Router</category>
+        
+        <category>Serial</category>
         
         <category></category>
       </item>
