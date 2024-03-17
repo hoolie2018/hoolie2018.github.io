@@ -184,7 +184,11 @@ March 16, 2024
                 <!-- Add your table of contents here -->
 
 
-                <p>A solution consisting of an OpenWrt-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify the main script is running and executes it if not. SMS gateway used in 46elks.com.</p>
+                <p>The solution described involves using an OpenWrt-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script on the router parses messages from the alarm system, and if they meet certain criteria (deemed “interesting”), it forwards the message via SMS to a designated contact.</p>
+
+<p>To ensure continuous operation, a cron job is set up to execute a keep-alive script, which verifies if the main script is running and starts it if it’s not. Additionally, the SMS gateway service provided by 46elks.com is utilized to send the SMS messages.</p>
+
+<p>This solution integrates various components to create a monitoring and alerting system, enabling remote monitoring and notification capabilities for the HKC alarm system.</p>
 
 <h3 id="main-script---hkcsh">Main script - HKC.sh</h3>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/ash</span>
@@ -471,7 +475,11 @@ log_message <span class="s2">"Starting up!"</span>
             "description": "Use an OpenWrt powered router to receive events from a HKC alarm and forward via SMS",
             "image": "https://www.itfixers.ie/assets/img/openwrt_logo.jpg",
             "url": "/hkc-alarm-event-sms-solution/",
-            "articleBody": "A solution consisting of an OpenWrt-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script parses messages, and if they are deemed interesting, forwards the message via SMS to a designated contact. A cron job executes a keep alive script to verify the main script is running and executes it if not. SMS gateway used in 46elks.com.
+            "articleBody": "The solution described involves using an OpenWrt-powered router connected to the printer serial port of an HKC alarm via a USB-to-serial adapter. The main script on the router parses messages from the alarm system, and if they meet certain criteria (deemed “interesting”), it forwards the message via SMS to a designated contact.
+
+To ensure continuous operation, a cron job is set up to execute a keep-alive script, which verifies if the main script is running and starts it if it’s not. Additionally, the SMS gateway service provided by 46elks.com is utilized to send the SMS messages.
+
+This solution integrates various components to create a monitoring and alerting system, enabling remote monitoring and notification capabilities for the HKC alarm system.
 
 Main script - HKC.sh
 #!/bin/ash
@@ -567,7 +575,7 @@ Cron job
 * * * * * /etc/check_hkc.sh
 
 ",
-            "wordcount": "580",
+            "wordcount": "633",
             "inLanguage": "en",
             "dateCreated": "2024-03-16/",
             "datePublished": "2024-03-16/",
