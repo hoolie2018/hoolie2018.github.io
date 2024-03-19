@@ -3,6 +3,14 @@
   
   
     {
+      "title"    : "NMAP Scan Specific Ports",
+      "tags"     : "NMAP, Ports, and Scan",
+      "categories" : "",
+      "url"      : "/nmap-scan-specific-ports/",
+      "date"     : "03/19/2024"
+    } ,
+  
+    {
       "title"    : "HKC Alarm Monitoring Solution",
       "tags"     : "OpenWrt, HKC, Alarm, 46elks.com, Printer, SMS, Router, and Serial",
       "categories" : "",
