@@ -5,12 +5,12 @@
     <description>A collection of articles written by an IT Specialist</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 19 Mar 2024 23:18:59 +0000</pubDate>
-    <lastBuildDate>Tue, 19 Mar 2024 23:18:59 +0000</lastBuildDate>
+    <pubDate>Tue, 19 Mar 2024 23:20:13 +0000</pubDate>
+    <lastBuildDate>Tue, 19 Mar 2024 23:20:13 +0000</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
       <item>
-        <title>NMAP Scan Specific Ports</title>
+        <title>Scan Specific Network Ports with NMAP</title>
         <description>&lt;h3 id=&quot;nmap-command-to-scan-specific-ports&quot;&gt;NMAP command to scan specific ports&lt;/h3&gt;
 
 &lt;p&gt;The following NMAP command will scan ports 22, 80 and 443 on hosts in the 192.168.0.0/24&lt;/p&gt;

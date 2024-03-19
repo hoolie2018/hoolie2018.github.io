@@ -3,7 +3,7 @@
   
   
     {
-      "title"    : "NMAP Scan Specific Ports",
+      "title"    : "Scan Specific Network Ports with NMAP",
       "tags"     : "NMAP, Ports, and Scan",
       "categories" : "",
       "url"      : "/nmap-scan-specific-ports/",
