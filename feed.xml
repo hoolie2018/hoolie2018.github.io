@@ -5,15 +5,13 @@
     <description>A collection of articles written by an IT Specialist</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Apr 2024 15:51:34 +0100</pubDate>
-    <lastBuildDate>Wed, 03 Apr 2024 15:51:34 +0100</lastBuildDate>
+    <pubDate>Wed, 03 Apr 2024 15:53:36 +0100</pubDate>
+    <lastBuildDate>Wed, 03 Apr 2024 15:53:36 +0100</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
     
       <item>
         <title>Install Kestra using Docker Compose</title>
-        <description>&lt;h3 id=&quot;install-kestra-using-docker-compose&quot;&gt;Install Kestra using Docker Compose&lt;/h3&gt;
-
-&lt;h4 id=&quot;download-the-docker-compose-file&quot;&gt;Download the Docker Compose file&lt;/h4&gt;
+        <description>&lt;h4 id=&quot;download-the-docker-compose-file&quot;&gt;Download the Docker Compose file&lt;/h4&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; docker-compose.yml &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
 https://raw.githubusercontent.com/kestra-io/kestra/develop/docker-compose.yml
