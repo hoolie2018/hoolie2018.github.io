@@ -3,7 +3,7 @@
   
   
     {
-      "title"    : "Kestra Install",
+      "title"    : "Install Kestra using Docker Compose",
       "tags"     : "Kestra, Install, and Docker Compose",
       "categories" : "",
       "url"      : "/kestra-install/",
