@@ -179,6 +179,13 @@
     
     
         <url>
+            <loc>/screen/</loc>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+            <lastmod>2024-06-06</lastmod>
+        </url>
+    
+        <url>
             <loc>/kestra-install/</loc>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>

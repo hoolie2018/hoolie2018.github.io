@@ -3,6 +3,14 @@
   
   
     {
+      "title"    : "How To Use Linux Screen",
+      "tags"     : "Linux Screen and How To",
+      "categories" : "",
+      "url"      : "/screen/",
+      "date"     : "06/06/2024"
+    } ,
+  
+    {
       "title"    : "Install Kestra using Docker Compose",
       "tags"     : "Kestra, Install, and Docker Compose",
       "categories" : "",

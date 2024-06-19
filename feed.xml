@@ -5,9 +5,23 @@
     <description>A collection of articles written by an IT Specialist</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Apr 2024 15:53:36 +0100</pubDate>
-    <lastBuildDate>Wed, 03 Apr 2024 15:53:36 +0100</lastBuildDate>
+    <pubDate>Wed, 19 Jun 2024 17:18:21 +0100</pubDate>
+    <lastBuildDate>Wed, 19 Jun 2024 17:18:21 +0100</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
+    
+      <item>
+        <title>How To Use Linux Screen</title>
+        <description>&lt;h4 id=&quot;introduction&quot;&gt;Introduction&lt;/h4&gt; &lt;p&gt;Screen is a terminal multiplexer. A screen session can be opened and then open any number of windows (virtual terminals) inside that session. Processes running in Screen will continue to run when their window is not visible even if you get disconnected.&lt;/p&gt; &lt;h4 id=&quot;screen-installation-for-ubuntu&quot;&gt;Screen Installation for Ubuntu&lt;/h4&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;screen &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;h4 id=&quot;commands&quot;&gt;Commands&lt;/h4&gt; &lt;p&gt;Start a new session&lt;/p&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;Detach from current session&lt;/p&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ctrl+a+d &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;List sessions&lt;/p&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;screen &lt;span class=&quot;nt&quot;&gt;-ls&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt; &lt;p&gt;Create a named session&lt;/p&gt; &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre...</description>
+        <pubDate>Thu, 06 Jun 2024 15:34:56 +0100</pubDate>
+        <link>/screen/</link>
+        <guid isPermaLink="true">/screen/</guid>
+        
+        <category>Linux Screen</category>
+        
+        <category>How To</category>
+        
+        <category></category>
+      </item>
     
       <item>
         <title>Install Kestra using Docker Compose</title>
